@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawood - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;700&family=Roboto+Mono:ital,wght@0,100;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4e7fbb44a.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            /* width: 100vw; */
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(153, 153, 226);
+            font-size: 1.1rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+        .firstSection > div{
+            width: 30%;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .leftSection{
+            
+            font-size: 2rem;
+            margin: 30px 0;
+        }
+        .rightSection img{
+            /* background-color: red; */
+            width: 80%;
+            margin: 50px 0;
+        }
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+        #element{
+            color: rgb(170, 107, 228);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .secondSection1{
+            max-width: 80vw;
+            margin: auto;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection1 h1{
+            font-size: 1.9rem;
+        }
+        .text-gray{
+            color: gray;
+        }
+        .secondSection .box{
+            background: white;
+            width: 59vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection1 .box1{
+            background: white;
+            width: 76.5vw;
+            height: 2px;
+            margin: 150px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+        .secondSection1 .vertical1{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 42px;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .image-top1{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-text{
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+        .vertical-text1{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+        }
+        footer{
+            background-color: #0e0e1a;
+            height: 133px;
+            margin: 0 0 -100 0;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 400px 200px;
+            justify-content: center;
+        }
+        .footer ul{
+            display: flex;
+        }
+        .footer ul li{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        
+        .secondSection1 .work li{
+            list-style: none;
+            font-size: 2rem;
+            margin: 10px 80px;
+        }
+        .objective h4{
+            width: 80vw;
+            margin: -100px 0 100px 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Dawood's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <!-- <li><a href="/">Services</a></li> -->
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Abu Dawood Khan</span> 
+                <div>And I am a passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="#"><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/dawoodkhan001"><button class="btn">Visit GitHub</button></a>
+                </div>
+            </div>
+            
+            <div class="rightSection">
+                <img src="./assets/bg.png" alt="">
+            </div>
+        </section>
+        <section class="objective">
+            <div>
+                <h4>
+                    I am a skilled programmer with JavaScript, React.js, MySQL and Node.js looking for a fresher role. I possess strong leadership qualities and thrive in collaborative team environment. with a passion for technology and attention to detail, I deliver high-quality results. I am committed to continuous learning and eager to contribute to dynamic organization.
+                </h4>
+            </div>
+        </section>
+    <hr>
+
+    <section class="secondSection1">
+        <div class="work">
+            <h1>Work Experience</h1>
+            <ul>
+                <li>Fresher</li>
+            </ul>
+        </div>
+        <br><br><br>
+        <!-- <span class="text-gray">What I have done so far</span> -->
+        <h1>Skills</h1>
+        <div class="box1">
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/js.png" alt="">
+                <div class="vertical-text1">
+                    JavaScript
+                </div>
+            </div>    
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/react.png" alt="">
+                <div class="vertical-text1">
+                    React.js
+                </div>
+            </div>    
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/expressjs.png" alt="">
+                <div class="vertical-text1">
+                    Express.js
+                </div>
+            </div>    
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/nodejs.png" alt="">
+                <div class="vertical-text1">
+                    Node.js
+                </div>
+            </div>    
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/mongodb.png" alt="">
+                <div class="vertical-text1">
+                    MongoDB
+                </div>
+            </div>
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/mysql.png" alt="">
+                <div class="vertical-text1">
+                    MySQL
+                </div>
+            </div>
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/git.png" alt="">
+                <div class="vertical-text1">
+                    Git
+                </div>
+            </div>
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/github.png" alt="">
+                <div class="vertical-text1">
+                    GitHub
+                </div>
+            </div>
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/css.png" alt="">
+                <div class="vertical-text1">
+                    CSS
+                </div>
+            </div>
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/html.png" alt="">
+                <div class="vertical-text1">
+                    HTML
+                </div>
+            </div>
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/excel.png" alt="">
+                <div class="vertical-text1">
+                    Excel
+                </div>
+            </div>
+            <div class="vertical1">
+                <img class="image-top1" src="./assets/word.png" alt="">
+                <div class="vertical-text1">
+                    Word
+                </div>
+            </div>
+               
+                
+           
+            
+
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <section class="secondSection">
+            <!-- <span class="text-gray">What I have done so far</span> -->
+            <h1>Education</h1><br><br>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="./assets/developer.png" alt="">
+                    <div class="vertical-text">
+                        Bachelor of Technology (M.E.) (2018-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Patel College of Science & Technology
+                        Bhopal (M.P.)
+                        8.04/10 CGPA
+                    
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="./assets/developer.png" alt="">
+                    <div class="vertical-text">
+                        Intermediate (2016-2018)
+                    </div>
+                    <div class="vertical-desc">
+                        Radiant Academy
+                        Jalalpur, Ambedkar Nagar (U.P.)
+                        <div>57/100 %</div>
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="./assets/developer.png" alt="">
+                    <div class="vertical-text">
+                        Matriculation (2014-2016)
+                    </div>
+                    <div class="vertical-desc">
+                        S.K.C.C.Academy
+                        Ramnagar, Ambedkar Nagar (U.P.)
+                        <div>10/10 CGPA</div>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <h3>Feel free to get in touch with me at:</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/tell.dawoodkhan?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/Khan_AbuDawood?t=V8Xf7-OrJtlYgHyn9m8aVA&s=09"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com/dawood.__.khan?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/abu-dawood-khan-4a5a79203"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+           
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full Stack Web Developer'],
+          typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
